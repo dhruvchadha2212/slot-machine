@@ -1,0 +1,213 @@
+#space {
+	perspective: 800px;
+	perspective-origin: 150px 180px;
+	position: relative;
+	left: 150px;
+	width: 300px;
+	height: 600px;
+}
+#container1, #container2, #container3 {
+    position: absolute;
+	transform-style: preserve-3d;
+	transform-origin: 0 50px 0;
+	top: 142px;
+}
+#container1 {
+	left: 0px;
+}
+#container2 {
+	left: 100px;
+}
+#container3 {
+	left: 200px;
+}
+#container1 div, #container2 div, #container3 div {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	backface-visibility: hidden;
+	box-sizing: border-box;
+	background-color: #00cc00;
+}
+#container1 img, #container2 img, #container3 img {
+	height: 100%;
+	border-radius: 20px;
+	border: 5px solid #00cc00;
+	box-sizing: border-box;
+}
+.div1 {
+	transform: rotateX(0deg) translateZ(86px);
+}
+.div2 {
+	transform: rotateX(60deg) translateZ(86px);
+}
+.div3 {
+	transform: rotateX(120deg) translateZ(86px);
+}
+.div4 {
+	transform: rotateX(180deg) translateZ(86px);
+}
+.div5 {
+	transform: rotateX(240deg) translateZ(86px);
+}
+.div6 {
+	transform: rotateX(300deg) translateZ(86px);
+}
+#frame {
+	position: absolute;
+	width: 336px;
+	height: 195px;
+	border: 20px solid #0000b3;
+	border-top: 101px solid #0000b3;
+	border-radius: 100px 100px 0 0;
+	top: 2px;
+	left: 120px;
+}
+#title {
+	position: absolute;
+	font-family: 'Asset';
+	font-size: 30px;
+	color: orange;
+	text-align: center;
+	text-shadow: 0 0 20px yellow;
+	top: 15px;
+	left: 195px;
+}
+#tablespace {
+	position: absolute;
+	top: 311px;
+	left: 107px;
+	perspective: 200px;
+	perspective-origin: 50% 50%;
+	transform-style: preserve-3d;
+	width: 402px;
+	height: 100px;
+}
+#table {
+	width: 402px;
+	height: 80px;
+	/*background: linear-gradient(#0000b3, #4d4dff);*/
+	background-size: cover;
+	transform: rotateX(20deg);
+	border: 3px solid black;
+	box-sizing: border-box;
+	background-image: url(http://casirating.com/wp-content/uploads/2016/02/jackpot-580x326.jpg);
+}
+#table p {
+	font-size: 35px;
+	margin-top: 16px;
+	margin-left: 30px;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0 0 2px black, 0 0 5px black, 0 0 10px black;
+}
+#legs {
+	position: absolute;
+	top: 390px;
+	left: 92px;
+	border: 5px solid red;
+	box-sizing: border-box;
+	width: 432px;
+	height: 240px;
+	background-image: url(http://presentcreative.com/ios/wp-content/uploads/2013/02/FunzioHeader.png);
+	background-size: cover;
+}
+#coinslot {
+	position: absolute;
+	top: 13px;
+	left: 325px;
+	width: 35px;
+	height: 50px;
+	background-image: url(http://stockfresh.com/files/p/pling/m/76/297266_stock-photo-silver-aluminium-rough-texture-background.jpg);
+    background-size: cover;
+	border-radius: 5px;
+}
+#slot {
+	width: 25px;
+	height: 23px;
+	position: absolute;
+	top: 17px;
+	left: 329px;
+	border: 1px solid grey;
+	border-radius: 50%;
+	background: radial-gradient(white 1%, silver);
+}
+#coin {
+	width: 3px;
+	height: 12px;
+	background-color: black;
+	position: absolute;
+	top: 5px;
+	left: 11px;
+}
+#jackpot {
+	width: 90%;
+	height: 90%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#jackpot img {
+	width: 100px;
+	margin-left: 90px;
+}
+#mechanism {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 185px;
+	left: 496px;
+	perspective: 500px;
+	perspective-origin: 30% 100%;
+}
+#holder {
+	position: absolute;
+	top: 85px;
+	width: 30px;
+	height: 30px;
+	background: linear-gradient(black, grey, black);
+}
+#handle {
+	position: absolute;
+	top: -15px;
+	left: 20px;
+	width: 10px;
+	height: 100px;
+	background: linear-gradient(to right, black, grey, black);
+	transform-origin: 0 115px;
+	transform-style: preserve-3d;
+}
+#handle:before {
+	width: 24px;
+	height: 24px;
+	content: '';
+	position: absolute;
+	top: -12px;
+	left: -7px;
+	border-radius: 50%;
+	background-color: #ff4d4d;
+	transform-origin: 0 12px;
+}
+#handle:after {
+	width: 24px;
+	height: 24px;
+	content: '';
+	position: absolute;
+	top: -12px;
+	left: -7px;
+	border-radius: 50%;
+	transform: rotateX(90deg);
+	background-color: #ff4d4d;
+	transform-origin: 0 12px;
+}
+#hider {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: #ff4d4d;
+	position: absolute;
+	top: -12px;
+	left: -7px;
+	transform: rotateX(45deg);
+}
